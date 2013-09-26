@@ -1,9 +1,9 @@
 <li class="<%= cycle('', 'alt') %>">
   <div data-hook="minicart_item_image">
     <% if variant.images.length == 0 %>
-      <%= link_to mini_image(variant.product), variant.product %>
+      <%= link_to mini_image(variant.product), spree.product_path(variant.product) %>
     <% else %>
-      <%= link_to image_tag(variant.images.first.attachment.url(:mini)), variant.product %>
+      <%= link_to image_tag(variant.images.first.attachment.url(:mini)), spree.product_path(variant.product) %>
     <% end %>
   </div>
   <div data-hook="minicart_item_description">
