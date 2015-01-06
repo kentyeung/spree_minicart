@@ -6,7 +6,7 @@
       over: function(){
         $("#minicart").slideDown();
       },
-      timeout: 250, // number = milliseconds delay before onMouseOut
+      timeout: 2500, // number = milliseconds delay before onMouseOut
       out: function(){
         $("#minicart").slideUp();
       }
