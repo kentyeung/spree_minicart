@@ -26,7 +26,7 @@
             $(this).find("[data-hook='minicart_item_description']").hide()
             $(this).find("[data-hook='minicart_item_actions']").show()
           },
-          timeout: 100, // number = milliseconds delay before onMouseOut
+          timeout: 2500, // number = milliseconds delay before onMouseOut
           out: function(){
             $(this).find("[data-hook='minicart_item_description']").show()
             $(this).find("[data-hook='minicart_item_actions']").hide()
